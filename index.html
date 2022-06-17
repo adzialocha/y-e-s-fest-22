@@ -200,7 +200,7 @@
       const arrowElems = document.querySelectorAll('.icons');
       for (let i = 0; i < arrowElems.length; i += 1) {
         const elem = arrowElems[i];
-        elem.innerText = new Array(randomRange(5, 50)).fill(0).map(() => {
+        elem.innerText = new Array(randomRange(25, 50)).fill(0).map(() => {
           return randomItem(['←', '↑', '→', '↓', '↖', '↗', '↘', '↙', '●', '◯', '□', '▪']);
         }).join(' ');
         elem.style.transform = `rotate(${randomRange(-10, 10)}deg)`;
