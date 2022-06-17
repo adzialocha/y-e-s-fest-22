@@ -3,8 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>Y-E-S Fest 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.4;
+      }
+
+      strong {
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Rubik Mono One', sans-serif;
+        line-height: 1;
+      }
+
+      h1 {
+        font-size: 70px;
+      }
+
+      p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      .icons {
+        display: inline-block;
+        font-size: 100px;
+        line-height: 1;
+        mix-blend-mode: color;
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, Y-E-S Fest!</h1>
+    <div class="icons"></div>
+    <h1>Hello, Y-E-S Fest 22!</h1>
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="icons"></div>
+    <h2>Test</h2>
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="icons"></div>
+    <script>
+      function randomRange(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      function randomItem(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      const arrowElems = document.querySelectorAll('.icons');
+      for (let i = 0; i < arrowElems.length; i += 1) {
+        arrowElems[i].innerText = new Array(randomRange(5, 50)).fill(0).map(() => {
+          return randomItem(['←', '↑', '→', '↓', '↖', '↗', '↘', '↙', '●', '◯', '□', '▪']);
+        }).join(' ');
+        arrowElems[i].style.transform = `rotate(${randomRange(-10, 10)}deg)`;
+      }
+    </script>
   </body>
 </html>
