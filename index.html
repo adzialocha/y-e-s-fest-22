@@ -133,7 +133,7 @@
       <h1>Hallo Y-E-S Fest 22!</h1>
       <p>On the <strong>10th and 11th of September</strong> the <a href="https://y-e-s.org" target="_blank">Y-E-S collective</a> invites to the second edition of the Y-E-S Fest, taking place in and around the Heizhaus of the <strong>Uferstudios in Berlin</strong>. The program includes interdisciplinary performances to be read freely as music, dance, performative acts or/and interventions in public space.</p>
       <p>For example: workshops on the intersecting of the botanical and musical work of Hildegard von Bingen, and on creative activism in colonized vacation areas; an installation transferring the architecture of public space into sound; a rehearsal-performance on the choreography of demonstrations; as well as live music acts.</p>
-      <div class="icons"></div>
+      <div class="icons" data-min="5" data-max="15"></div>
       <p>Am <strong>10. und 11. September</strong> lädt das <a href="https://y-e-s.org" target="_blank">Y-E-S Kollektiv</a> zur zweiten Ausgabe des Y-E-S Festes ein, das im und um das Heizhaus des Uferstudios stattfindet. Das Programm umfasst interdisziplinäre Performances, die als Musik, Tanz, performativer Akt oder/und Interventionen im öffentlichen Raum realisiert werden.</p>
       <p>Zum Beispiel: ein Workshop, der das botanische und musikalische Werk der Hildegard von Bingen miteinander verbindet, ein Workshop über kreativen Aktivismus in kolonisierten Urlaubsgebieten, eine Installation, die die Architektur des öffentlichen Raums in Klang umsetzt, eine Probe-Performance zu Demonstrations-Choreographien sowie Live-Musik-Acts.</p>
       <div class="icons"></div>
@@ -154,7 +154,7 @@
         <p data-fold-content="marcela">Marcela Lucatelli can already be hailed as one of the most innovative vocalists and composers of her generation. Born in Brazil and based in Denmark, Marcela has earned international recognition for her extremely original, sensuous and politically charged performance works. The composer is known for writing "scores for the limits of bodies and voice" (The Wire). <a href="https://www.marcelalucatelli.co" target="_blank">https://www.marcelalucatelli.co</a></p>
         </section>
       <section class="fold" data-fold="bag">
-        <strong data-fold-header="bag">BAG collective (Annegret Schalke, Maya Weinberg)</strong>
+        <strong data-fold-header="bag">BAG collective (Annegret Schalke, Maya Weinberg, Natal Igor Dobkin)</strong>
         <p data-fold-content="bag">BAG is a collective composed of 6 choreographer-performers based in Berlin. Maya Weinberg and Roni Katz come from Israel, Xenia Taniko and Annegret Schalke are from Germany, Lisa Densem comes from New Zealand, and Manon Parent from France. Their wish to work together as a collective originated in a collaboration that was surrounding the choreographic proposal of Roni Katz in 2018 (A Matter of One’s Own) during which they realized the potential of their multidisciplinary and complementary skills. While they are all professional choreographers and dancers, each of them also has an additional professional activity which ranges from music to costume design, dramaturgy to light design. Their shared interests revolve around the ideas of social cohesion through sharing their practice, adaptation to multiple contexts and collecting stories. This “collecting” aspect is what gave the collective its name in 2020, B A G. Inspired by Ursula K. Le Guin's “the carrier bag theory of fiction”, they decided to see their creating as an ever-transforming, sponge-like process, rather than a fixed form that would be seen at some point as a finished object. <a href="http://bag-collective.de/" target="_blank">http://bag-collective.de</a></p>
       </section>
       <section class="fold" data-fold="viola">
@@ -184,6 +184,7 @@
       <div class="icons"></div>
       <h2>About Y-E-S</h2>
       <p>Launched in September 2017, Y-E-S is an acronym with many meanings, from York East Scotland to Yea Eat Serum, a digital publisher and a collective of artists from within different fields of experimental music: <a href="https://kajduncandavid.com" target="_blank">Kaj Duncan David</a>, <a href="https://adz.garden" target="_blank">Andreas Dzialocha</a>, <a href="https://www.lauremhiendl.com" target="_blank">Laure M. Hiendl</a>, <a href="https://www.neohuelcker.de" target="_blank">Neo Hülcker</a> and <a href="https://stellanveloce.de" target="_blank">Stellan Veloce</a>. On the platform <a href="https://y-e-s.org" target="_blank">y-e-s.org</a> they collect and publish scores, not limited to the realm of music but including performance instructions, a recipe, code, choreography, a surprise file package, video games, film scripts, poetry, or an online tutorial.</p>
+      <div class="icons" data-min="5" data-max="15"></div>
       <p>Y-E-S wurde im September 2017 gegründet und ist ein Akronym mit vielen Bedeutungen, von York East Scotland bis Yea Eat Serum, ein digitaler Verlag und ein Kollektiv von Künstler*innen aus verschiedenen Bereichen der experimentellen Musik: <a href="https://kajduncandavid.com" target="_blank">Kaj Duncan David</a>, <a href="https://adz.garden" target="_blank">Andreas Dzialocha</a>, <a href="https://www.lauremhiendl.com" target="_blank">Laure M. Hiendl</a>, <a href="https://www.neohuelcker.de" target="_blank">Neo Hülcker</a> und <a href="https://stellanveloce.de" target="_blank">Stellan Veloce</a>. On the platform <a href="https://y-e-s.org" target="_blank">y-e-s.org</a>. Auf der Plattform <a href="https://y-e-s.org" target="_blank">y-e-s.org</a> sammeln und veröffentlichen sie Partituren, die sich nicht auf den Bereich der Musik beschränken, sondern auch Aufführungsanweisungen, ein Rezept, ein Code, eine Choreographie, ein Überraschungsdateipaket, Videospiele, Filmdrehbücher, Gedichte oder ein Online-Tutorial sind.</p>
       <div class="icons"></div>
       <h2>Support 💘</h2>
@@ -204,7 +205,9 @@
       const arrowElems = document.querySelectorAll('.icons');
       for (let i = 0; i < arrowElems.length; i += 1) {
         const elem = arrowElems[i];
-        elem.innerText = new Array(randomRange(25, 50)).fill(0).map(() => {
+        const min = elem.getAttribute('data-min') ? parseInt(elem.getAttribute('data-min'), 10) : 25;
+        const max = elem.getAttribute('data-max') ? parseInt(elem.getAttribute('data-max'), 10) : 50;
+        elem.innerText = new Array(randomRange(min, max)).fill(0).map(() => {
           return randomItem(['←', '↑', '→', '↓', '↖', '↗', '↘', '↙', '●', '◯', '□', '▪']);
         }).join(' ');
         elem.style.transform = `rotate(${randomRange(-10, 10)}deg)`;
