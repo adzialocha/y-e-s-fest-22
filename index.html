@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://c.webfontfree.com/c.js?f=Bowhouse-Bold" type="text/javascript"></script>
     <style>
       body {
@@ -19,6 +19,11 @@
 
       strong {
         font-weight: 700;
+        font-style: italic;
+      }
+
+      em {
+        font-weight: 400;
         font-style: italic;
       }
 
@@ -53,6 +58,11 @@
 
       a:hover {
         border-bottom: 4px dotted blue;
+      }
+
+      hr {
+        border: 0;
+        margin-top: 3em;
       }
 
       .wrapper {
@@ -106,19 +116,31 @@
         content: "↷ ↷ ↷ ↷ ↷ ↷ ↷ ↷ ↷ ↷";
       }
 
-      .tba {
+      .date {
+        padding: 0.5em;
+        padding-left: 0;
+        transform: rotate(-3deg);
         display: inline-block;
-        margin: 1em;
-      }
-
-      .tba-inner {
-        max-width: 400px;
-        height: 300px;
-        transform: rotate(-10deg);
         background-color: black;
         color: white;
         font-family: 'Rubik Mono One', sans-serif;
         line-height: 1;
+      }
+
+      .workshop {
+        max-width: 32em;
+        background-color: blue;
+        color: white;
+        font-family: 'Rubik Mono One', sans-serif;
+        line-height: 1;
+      }
+
+      .workshop a {
+        color: white;
+      }
+
+      .event-type {
+        color: blue;
       }
 
       .logo {
@@ -126,6 +148,17 @@
         margin-right: 1em;
         max-width: 200px;
         background-color: white;
+      }
+
+      .signup {
+        background-color: blue;
+        color: white;
+        font-family: 'Rubik Mono One', sans-serif;
+        line-height: 1;
+      }
+
+      .signup:hover {
+        border-bottom: 0;
       }
     </style>
   </head>
@@ -135,12 +168,71 @@
       <h1>Hallo Y-E-S Fest 22!</h1>
       <p>On the <strong>10th and 11th of September</strong> the <a href="https://y-e-s.org" target="_blank">Y-E-S collective</a> invites to the second edition of the Y-E-S Fest, taking place in and around the Heizhaus of the <strong>Uferstudios in Berlin</strong>. The program includes interdisciplinary performances to be read freely as music, dance, performative acts or/and interventions in public space.</p>
       <p>For example: workshops on the intersecting of the botanical and musical work of Hildegard von Bingen, and on creative activism in colonized vacation areas; an installation transferring the architecture of public space into sound; a rehearsal-performance on the choreography of demonstrations; as well as live music acts.</p>
-      <div class="icons" data-min="5" data-max="15"></div>
-      <p>Am <strong>10. und 11. September</strong> lädt das <a href="https://y-e-s.org" target="_blank">Y-E-S Kollektiv</a> zur zweiten Ausgabe des Y-E-S Festes ein, das im und um das Heizhaus des Uferstudios stattfindet. Das Programm umfasst interdisziplinäre Performances, die als Musik, Tanz, performativer Akt oder/und Interventionen im öffentlichen Raum realisiert werden.</p>
-      <p>Zum Beispiel: ein Workshop, der das botanische und musikalische Werk der Hildegard von Bingen miteinander verbindet, ein Workshop über kreativen Aktivismus in kolonisierten Urlaubsgebieten, eine Installation, die die Architektur des öffentlichen Raums in Klang umsetzt, eine Probe-Performance zu Demonstrations-Choreographien sowie Live-Musik-Acts.</p>
+      <div class="icons"></div>
+      <h2>Workshop invitation 🛼</h2>
+      <p>On the afternoon of September 10th and 11th, as part of the Y-E-S Fest program three <strong>free workshops</strong> will be held in the Heizhaus of Ufer Studios: Pulp Suede Blur by the Berliner B A G collective (Annegret Shalke, Maya Weinberg, Nattan Igor Dobkin), Song of Herbs by singer and herbalist Atalya Tirosh and Tour Operator by the Sardinian C.A.S.C.A.T.A collective.</p>
+      <p class="workshop">The workshops are open to all, no previous knowledge required. For question and registration, write to <a href="mailto:mail@y-e-s.org">mail@y-e-s.org</a> by Sept. 5th.</p>
       <div class="icons"></div>
       <h2>Programme</h2>
-      <div class="tba"><div class="tba-inner">Workshops, performances, installations to be announced soon!</div></div>
+      <h3 class="date">Ongoing</h3>
+      <section class="fold" data-fold="feld">
+        <strong data-fold-header="feld"><span class="date">16:00 - 22:00</span> ~ "FELD" <span class="event-type">GPS installation</span> <span class="event-location">@ in the yard</span></strong>
+        <p data-fold-content="feld">Lucien Danzeisen and Lennart Melzer share different projects: With "FELD_", they created a site-specific composition with an open form: 347 GPS spots=soundfiles on Tempelhofer Feld, Berlin. See feld.zerkabelt.de for more infos. As "teaser", the duo plays experimental music between improvisation, concepts and compositions, using different setups, including acoustic and electronical instruments and live-coding. For Y-E-S Fest, they bring these two artistic practices together, in field:teaser, which is both a concert and a site-specific sound-installation. <a href="https://teaser.zerkabelt.de" target="_blank">https://teaser.zerkabelt.de</a></p>
+      </section>
+      <hr />
+      <h3 class="date">Saturday 10.09.</h3>
+      <section class="fold" data-fold="feld">
+        <strong data-fold-header="feld"><span class="date">16:00 - 18:00</span> ~ "Pulp Suede Blur" <span class="event-type">Workshop</span> <span class="event-location">@ in Heizhaus</span></strong>
+        <p data-fold-content="feld">In this workshop the collective of choreographers B A G invites the participants to see and experience physical space though a lens of blurriness. Within our project LANDERS we were exploring ways of shifting our perception in order to sense our everyday surrounding anew. Masking our gaze with grainy transparent filters allows us to see the world around us as an abstract image of colors and blended shapes. What happens when all edges are softened? What disappears and what sticks out? What do we hear? How do we orient ourselves? How does a blurred vision put us in motion and emotion? Which narratives arise? We will dive together into a countour-less performative space, a theatre of light, sound and movement. <a class="signup" href="mailto:mail@y-e-s.org">Sign up!</a></p>
+      </section>
+      <section class="fold" data-fold="feld">
+        <strong data-fold-header="feld"><span class="date">19:00 - 22:00</span> ~ "Y-E-S All-Friends-Fun #1" <span class="event-type">Performances and Concerts</span> <span class="event-location">@ in Heizhaus</span></strong>
+        <div data-fold-content="feld">
+        <strong>Maikon K ~ "Disintegration Course"</strong>
+        <p>The core focus of his work is the body and its capacity to change perceptions, influenced by a shamanic perspective in which the performer unfolds himself into several different realities through specific body techniques, using song, non-verbal sound, dance, visual signs and ritualized activities. Your interests are states of consciousness, dark humor, the relation sacred-profane, sexuality, intensities, grotesque, to provoke rituals, to test sensibilities.</p>
+        <strong>Kaj Duncan David ~ Solo</strong>
+        <p>Kaj Duncan David performs solo music from his album 'All Culture Is Dissolving'</p>
+        <strong>Marcela Lucatelli ~ "I am a golden god"</strong>
+        <p>In Marcela Lucatelli's “I Am a Golden God” the artist takes us into a synth-pop journey and shakes loose the narratives of progress contained in it. By way of Lucatelli, machine and human are a sole organism and we are invited into the cracks of the technology. A wrestling match between her intensely corporeal vocalisations and the synths capacities for sonic dominance, “I Am a Golden God” shreds, exposes and tenderly caresses the legacy of modernism as Western, technocratic and contingent. In so doing, it opens the cages for the colonial ghosts of monumentalism that have held back liberatory potential for new ways of living the movement contained.</p>
+        <strong>Lu Danzeisen & Lennart Melzer ~ "Feld:teaser part 2"</strong>
+        <p>Danzeisen and Melzer will perform live as an addition to their installation, the concert and the sounds from the installation are complementary to each other.</p>
+        </div>
+      </section>
+      <hr />
+      <h3 class="date">Sunday 11.09.</h3>
+      <section class="fold" data-fold="feld">
+        <strong data-fold-header="feld"><span class="date">16:00 - 18:00</span> ~ "Songs of Herbs" <span class="event-type">Workshop</span> <span class="event-location">@ in the yard</span></strong>
+        <p data-fold-content="feld">A participatory workshop-performance informed by Hildegard von Bingen's (1098-1179) body of work, combining experimental vocalization techniques and principals of herbal medicine, with the aim to help anyone find their voice, for singing or for speaking their truth. No previous knowledge is required. <a class="signup" href="mailto:mail@y-e-s.org">Sign up!</a></p>
+      </section>
+      <section class="fold" data-fold="feld">
+        <strong data-fold-header="feld"><span class="date">17:00 - 18:30</span> ~ "Tour Operator" <span class="event-type">Workshop</span> <span class="event-location">@ in Heizhaus</span></strong>
+        <div data-fold-content="feld">
+          <p>Il collettivo antimilitarista C.A.S.C.A.T.A. will lead Tour Operator, an experimental, co-participatory workshop to discover the Mediterranean island Sardinia, 1897 kilometers of beautiful cost, 35000 acres of military zones.</p>
+          <p>Don't settle for the regular tourist package! Dive into local culture and experiment first-hand with what it really means to live in Sardinia, among immaculate beaches, rural attractions, military bases, lethal weapons and two-headed lambs and discover what hides behind the mask of this tourist paradise!</p>
+          <p>Through guided play participants will perform and experience the contradictions of life in Sardinia, discovering this maritime paradise, destination of 3 million tourists a year (500 thousand of which came from Germany in 2019).</p>
+          <p>Warning: loud sounds are used in the workshop.</p>
+          <a class="signup" href="mailto:mail@y-e-s.org">Sign up!</a>
+        </div>
+      </section>
+      <section class="fold" data-fold="feld">
+        <strong data-fold-header="feld"><span class="date">19:00 - 22:00</span> ~ "Y-E-S All-Friends-Fun #2" <span class="event-type">Performances and Concerts</span> <span class="event-location">@ in Heizhaus</span></strong>
+        <div data-fold-content="feld">
+        <strong>Ehsan Shayanfard ~ "May I show you"</strong>
+        <p>In my recent life experiment, my early motivation and desires direct me to the verbs of to start and to do something completely lost. This process has a direct connection with my uncertain conditions. And these uncertain conditions reference the effect of political and social conditions to my life experiment. Why do I work? Does it matter if I work on this idea? What is my best doing in these circumstances?</p>
+        <strong>Jessie Marino ~ "Cla$$sified"</strong>
+        <p><em>the classified documents retrieved by the F-Bi from M-R-LG0, the private residence of FRMR PRSDNT DNLD TRMP, have been leaked!</em></p>
+        <p><em>do you want to know what's written on them?</em></p>
+        <p><em>"it's the little things that get you."</em></p>
+        <p>for voices, electronics, boxes, papers, video, and secrets.</p>
+        <strong>Viola yip ~ solo</strong>
+        <p>Viola Yip creates new self-built instruments and sound works in the intersection of composition, performance, improvisation and sound art, exploring various relationships between media, materiality, space and our musical bodies in experimental music.</p>
+        <strong>Name Change (Stellan Veloce & Neo Hülcker)</strong>
+        <p>Name Change is a band composed by Neo Hülcker and Stellan Veloce. It can also be a necessary step to repossess your own representation. Stellan Veloce plays harmonica and OP1 and Neo Hülcker Zyther and voice</p>
+        <strong>Andreas Dzialocha ~ solo</strong>
+        <p>Andreas Dzialocha performs solo music from his album 'For Always LP'</p>
+        </div>
+      </section>
+      <hr />
       <div class="icons"></div>
       <h2>Artists</h2>
       <section class="fold" data-fold="maikon">
@@ -156,8 +248,8 @@
         <p data-fold-content="marcela">Marcela Lucatelli can already be hailed as one of the most innovative vocalists and composers of her generation. Born in Brazil and based in Denmark, Marcela has earned international recognition for her extremely original, sensuous and politically charged performance works. The composer is known for writing "scores for the limits of bodies and voice" (The Wire). <a href="https://www.marcelalucatelli.co" target="_blank">https://www.marcelalucatelli.co</a></p>
         </section>
       <section class="fold" data-fold="bag">
-        <strong data-fold-header="bag">BAG collective (Annegret Schalke, Maya Weinberg, Natal Igor Dobkin)</strong>
-        <p data-fold-content="bag">BAG is a collective composed of 6 choreographer-performers based in Berlin. Maya Weinberg and Roni Katz come from Israel, Xenia Taniko and Annegret Schalke are from Germany, Lisa Densem comes from New Zealand, and Manon Parent from France. Their wish to work together as a collective originated in a collaboration that was surrounding the choreographic proposal of Roni Katz in 2018 (A Matter of One’s Own) during which they realized the potential of their multidisciplinary and complementary skills. While they are all professional choreographers and dancers, each of them also has an additional professional activity which ranges from music to costume design, dramaturgy to light design. Their shared interests revolve around the ideas of social cohesion through sharing their practice, adaptation to multiple contexts and collecting stories. This “collecting” aspect is what gave the collective its name in 2020, B A G. Inspired by Ursula K. Le Guin's “the carrier bag theory of fiction”, they decided to see their creating as an ever-transforming, sponge-like process, rather than a fixed form that would be seen at some point as a finished object. <a href="http://bag-collective.de/" target="_blank">http://bag-collective.de</a></p>
+        <strong data-fold-header="bag">B A G collective (Annegret Schalke, Maya Weinberg, Nattan Igor Dobkin)</strong>
+        <p data-fold-content="bag">B A G is a collective composed of 6 choreographer-performers based in Berlin: Maya Weinberg, Roni Katz, Xenia Taniko, Annegret Schalke, Lisa Densem, Manon Parent. Their shared interests revolve around the ideas of social cohesion through sharing their practice, adaptation to multiple contexts and collecting stories. This “collecting” aspect is what gave the collective its name in 2020, B A G. Inspired by Ursula K. Le Guin's “the carrier bag theory of fiction”, they decided to see their creating as an ever-transforming, sponge-like process, rather than a fixed form that would be seen at some point as a finished object. <a href="http://bag-collective.de/" target="_blank">http://bag-collective.de</a></p>
       </section>
       <section class="fold" data-fold="viola">
         <strong data-fold-header="viola">Viola Yip</strong>
@@ -169,7 +261,7 @@
       </section>
       <section class="fold" data-fold="atalya">
         <strong data-fold-header="atalya">Atalya Tirosh</strong>
-        <p data-fold-content="atalya">Atalya Tirosh a cross-genre vocal artist and creator of site-specific performances who’s practice binds together a vast array of singing techniques with herbalist practices. She strives to create idiosyncratic works which sonically explore feminine knowledge in contemporary times. Uninhibited by stylistic constrictions Tirosh utilizes the voice as a tool for self-expression, weaving a web that bridges the natural world and the stage, drawing from her lifelong work with medicinal herbs to inform new ways of music making.</p>
+        <p data-fold-content="atalya">Atalya Tirosh is a cross-genre vocal artist and creator of site-specific performances who’s practice binds together a vast array of singing techniques with herbalist practices. Uninhibited by stylistic constrictions Tirosh utilizes the voice as a tool for self-expression, weaving a web that bridges the natural world and the stage, drawing from her lifelong work with medicinal herbs to inform new ways of music making. She is a founding member of the Psychedelic Agora Collective, and offers mind-expanding and voice-releasing workshops in Europe and in Israel.</p>
       </section>
       <section class="fold" data-fold="cascata">
         <strong data-fold-header="cascata">CASCATA collective</strong>
@@ -186,8 +278,6 @@
       <div class="icons"></div>
       <h2>About Y-E-S</h2>
       <p>Launched in September 2017, Y-E-S is an acronym with many meanings, from York East Scotland to Yea Eat Serum, a digital publisher and a collective of artists from within different fields of experimental music: <a href="https://kajduncandavid.com" target="_blank">Kaj Duncan David</a>, <a href="https://adz.garden" target="_blank">Andreas Dzialocha</a>, <a href="https://www.lauremhiendl.com" target="_blank">Laure M. Hiendl</a>, <a href="https://www.neohuelcker.de" target="_blank">Neo Hülcker</a> and <a href="https://stellanveloce.de" target="_blank">Stellan Veloce</a>. On the platform <a href="https://y-e-s.org" target="_blank">y-e-s.org</a> they collect and publish scores, not limited to the realm of music but including performance instructions, a recipe, code, choreography, a surprise file package, video games, film scripts, poetry, or an online tutorial.</p>
-      <div class="icons" data-min="5" data-max="15"></div>
-      <p>Y-E-S wurde im September 2017 gegründet und ist ein Akronym mit vielen Bedeutungen, von York East Scotland bis Yea Eat Serum, ein digitaler Verlag und ein Kollektiv von Künstler*innen aus verschiedenen Bereichen der experimentellen Musik: <a href="https://kajduncandavid.com" target="_blank">Kaj Duncan David</a>, <a href="https://adz.garden" target="_blank">Andreas Dzialocha</a>, <a href="https://www.lauremhiendl.com" target="_blank">Laure M. Hiendl</a>, <a href="https://www.neohuelcker.de" target="_blank">Neo Hülcker</a> und <a href="https://stellanveloce.de" target="_blank">Stellan Veloce</a>. On the platform <a href="https://y-e-s.org" target="_blank">y-e-s.org</a>. Auf der Plattform <a href="https://y-e-s.org" target="_blank">y-e-s.org</a> sammeln und veröffentlichen sie Partituren, die sich nicht auf den Bereich der Musik beschränken, sondern auch Aufführungsanweisungen, ein Rezept, ein Code, eine Choreographie, ein Überraschungsdateipaket, Videospiele, Filmdrehbücher, Gedichte oder ein Online-Tutorial sind.</p>
       <div class="icons"></div>
       <h2>Support 💘</h2>
       <a href="https://www.field-notes.berlin/de/festivals/89082/monat-der-zeitgenssischen-musik/89083/festival/" target="_blank"><img class="logo" src="mdzm.jpg"></a>
@@ -222,6 +312,11 @@
         const headerElem = elem.querySelector('[data-fold-header]')
         const contentElem = elem.querySelector('[data-fold-content]')
         headerElem.addEventListener('click', () => {
+          for (let i = 0; i < foldElems.length; i += 1) {
+            if (foldElems[i] !== elem) {
+              foldElems[i].classList.remove('fold-active');
+            }
+          }
           elem.classList.toggle('fold-active');
         });
 
